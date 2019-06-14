@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+button, input{
+  padding: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:hover:disabled {
+  cursor: default;
+}
+
+.hidden {
+  display: none;
+}
+
+#bookmark-list-item {
+  width: 250px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.bookmark-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.bookmark-list > li {
+  margin-bottom: 20px;
+  border: 1px solid grey;
+  padding: 20px;
+}
+
+.bookmark-item {
+  display: block;
+  color: grey;
+  font-style: italic;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.bookmark-item__checked {
+  text-decoration: line-through;
+}
+
+.error-pop{
+  position:fixed;
+  right:1em;
+  top:1em;
+  background-color:red;
+  z-index: 3;
+}
+
+.error-close{
+  float:right;
+}
+
+#js-make-add-form-disappear{
+  position:absolute;
+  top:0em;
+  right:.12em;
+}
+
+#js-add-bookmark-form{
+  position:relative;
+}
+
+.colorOrange {
+  color: orange;
+}
+
+.bookmark-item-desc{
+  word-wrap: break-word;
+}
+.bookmark-item-title{
+  word-wrap: break-word;
+}
+
+#js-add-bookmark-form label {
+  display: block;
+  margin-top: .7rem;
+}
+
+input{
+  width:80%;
+}
+
+textarea{
+  width:80%;
+}
+
+h2{
+  font-size:100%;
+}
+.declare-add-button{
+  font-size:100%;
+}
+.declare-add-bookmark{
+  font-size:100%;
+}
+
+.bookmark-item-controls{
+  margin-top: .7em;
+}
+
+.declare-search-criteria{
+  font-size:100%;
+}
+
+
+@media screen and (min-width: 800px){
+  .container {
+    max-width: 77%;
+  }
+
+
+}
